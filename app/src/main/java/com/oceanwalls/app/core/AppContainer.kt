@@ -32,7 +32,6 @@ class AppContainer(context: Context) {
             chain.proceed(
                 chain.request().newBuilder()
                     .header("User-Agent", CommonsParams.USER_AGENT)
-                    .header("Accept-Encoding", "gzip")
                     .build()
             )
         }
