@@ -1,14 +1,31 @@
 # OceanWalls
 
+[![Build APK & Screenshots](https://github.com/technicalnihilist-lgtm/OceanWalls/actions/workflows/android.yml/badge.svg)](https://github.com/technicalnihilist-lgtm/OceanWalls/actions/workflows/android.yml)
+![Android](https://img.shields.io/badge/Android-7.0%2B%20(API%2024)-4FD1C5)
+![Kotlin](https://img.shields.io/badge/Kotlin-2.0.21-7F52FF)
+![Compose](https://img.shields.io/badge/Jetpack%20Compose-Material%203-4285F4)
+![Licence](https://img.shields.io/badge/Photos-CC0%20%7C%20PD%20%7C%20CC%20BY%20%7C%20CC%20BY--SA-4FD1C5)
+
 A premium, **live** ocean wallpaper app for Android. Every wallpaper is a real photograph
 pulled at runtime from the official **Wikimedia Commons API** — nothing is bundled, nothing is
 generated, and every image keeps its photographer, licence, licence URL and source page.
 
-- **Platform:** Android (Kotlin, Jetpack Compose, Material 3)
-- **Data source:** `https://commons.wikimedia.org/w/api.php` (MediaWiki action API)
-- **minSdk 24 · targetSdk 34 · compileSdk 34**
+**[⬇ Download the APK](https://github.com/technicalnihilist-lgtm/OceanWalls/releases/latest)** ·
+**[View screenshots](docs/screenshots)** ·
+**[API verification report](docs/API_VERIFICATION.md)**
 
----
+## Screenshots
+
+Captured automatically by CI on a Pixel 6 emulator (Android 14) running the real build against
+the live Commons API — these are not mockups.
+
+| Home | Collections | Search |
+|:---:|:---:|:---:|
+| ![Home](docs/screenshots/01-home.jpg) | ![Collections](docs/screenshots/02-home-collections.jpg) | ![Search](docs/screenshots/04-search-results.jpg) |
+
+| Wallpaper detail | Attribution | Credits & licences |
+|:---:|:---:|:---:|
+| ![Detail](docs/screenshots/05-wallpaper-detail.jpg) | ![Detail credits](docs/screenshots/05-wallpaper-detail.jpg) | ![Credits](docs/screenshots/07-credits.jpg) |
 
 ## What the app does
 
@@ -18,7 +35,7 @@ generated, and every image keeps its photographer, licence, licence URL and sour
 | Pagination | Real cursors (`gcmcontinue` for categories, `gsroffset` for search), encoded as `c:<token>` / `s:<offset>` |
 | Attribution | `extmetadata` → Artist, Credit, LicenseShortName, LicenseUrl, ImageDescription, DateTimeOriginal |
 | Licence gate | Strict allow-list: CC0, Public Domain, CC BY, CC BY-SA. Anything NC/ND/fair-use/unknown is rejected |
-| Quality gate | Rejects maps, diagrams, paintings, book plates, engravings and taxonomy charts using title + category heuristics |
+| Quality gate | JPEG photographs only; rejects maps, diagrams, paintings, book plates and taxonomy charts |
 | Duplicate prevention | Room primary key `(feedKey, pageId)` with `OnConflictStrategy.IGNORE` |
 | Search | Debounced (450 ms) full-text search with infinite scroll and saved recent searches |
 | Daily wallpaper | Deterministic rotating query per day, cached per calendar date |
@@ -47,11 +64,16 @@ bright distracting colour.
 
 ```bash
 # Android Studio: open the folder and press Run.
-# Command line:
 ./gradlew :app:assembleDebug        # APK at app/build/outputs/apk/debug/
 ```
 
-Requirements: JDK 17, Android SDK platform 34 + build-tools 34.0.0.
+Requirements: JDK 17, Android SDK platform 34 + build-tools 34.0.0. The wrapper is included.
+
+## CI
+
+`.github/workflows/android.yml` builds the debug APK on every push and then boots an Android 14
+emulator, drives the app with `scripts/capture-screens.sh` and uploads the screenshots as an
+artifact. Re-run it from the Actions tab (**Run workflow**) to refresh the screenshots.
 
 ## Project layout
 
@@ -74,11 +96,8 @@ app/src/main/java/com/oceanwalls/app/
 └── util/                           # WallpaperSetter, ShareHelper, HTML cleaner
 ```
 
-## Licensing of the app itself
+## Licensing
 
-App source: MIT. Bundled typeface Manrope: SIL Open Font License 1.1
+App source: MIT (`LICENSE`). Bundled typeface Manrope: SIL Open Font License 1.1
 (`app/src/main/assets/OFL-Manrope.txt`). Photographs: **their own licences**, shown per image —
 OceanWalls never claims ownership of third-party photography.
-
-See `docs/API_VERIFICATION.md` for the live API checks and `tools/verify_commons_api.py`
-to re-run them.
