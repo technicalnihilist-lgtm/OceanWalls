@@ -35,10 +35,12 @@ object CommonsMapper {
         val description = meta.text("ImageDescription")
 
         if (!ImageQualityGate.isPhotograph(page.title, categories)) return null
+        // Ocean imagery only - no photographs of people.
+        if (!ImageQualityGate.isHumanFree(title, description, categories)) return null
 
         val haystack = "$title $description ${categories.joinToString(" ")}"
         if (spec != null) {
-            if (!ImageQualityGate.matchesSubject(haystack, spec.keywords)) return null
+            if (!ImageQualityGate.matchesSubject(haystack, spec.keywords, spec.mustMatch)) return null
             if (spec.requiresOceanTerm && !ImageQualityGate.hasOceanTerm(haystack)) return null
         }
 

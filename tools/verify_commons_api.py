@@ -28,7 +28,26 @@ BLOCK = re.compile(r"(non[- ]?commercial|\bnc\b|no[- ]?deriv|\bnd\b|fair use|all
 JUNK_TITLE = re.compile(r"(map|diagram|chart|graph|logo|sign|poster|stamp|illustration|drawing|painting|engraving|"
                         r"lithograph|dictionary|encyclop|scan|book|page|cover|atlas|plate|phylogen|distribution|"
                         r"ranger|study|expedition|narrative|pamphlet|brochure|earth at night|compass|psf|"
-                        r"comparison|comparisson|size|plot|scientific|rope|industry|machine|factory|engine)", re.I)
+                        r"comparison|comparisson|size|plot|scientific|rope|industry|machine|factory|engine|"
+                        r"\b(statue|sculpture|monument|fossil|specimen|holotype|museum|usnm|instructions|notice|"
+                        r"warning|billboard|placard|chumming|chuming|market|sale|seafood|restaurant|cooking|dish|"
+                        r"hurricane|typhoon|cyclone|satellite|military|vehicle|assault|amphibious|zoology|"
+                        r"natural history|limestone|devonian|geologic|outcrop|hubble|galaxy|nebula|telescope|nasa|\b(stilt|tern|gull|egret|heron|"
+                        r"eagle|hawk|owl|sparrow|crane|flamingo|avocet|plover|sandpiper|pelican)\b))", re.I)
+HUMAN_TERM = re.compile(
+    r"\b(people|person|persons|human|humans|man|men|woman|women|girl|girls|boy|boys|child|children|"
+    r"kid|kids|baby|infant|toddler|tourist|tourists|visitor|visitors|crowd|crowds|swimmer|swimmers|"
+    r"diver|divers|diving|scuba|snorkel\w*|surfer|surfers|surfing|lifeguard|lifeguards|model|models|"
+    r"portrait|portraits|selfie|couple|couples|family|families|wedding|bride|groom|soldier|soldiers|"
+    r"sailor|sailors|navy|troops|worker|workers|fisherman|fishermen|fishing|hand|hands|foot|feet|"
+    r"leg|legs|face|faces|mermaid|swimsuit|bikini|wetsuit|swimming pool|beachgoer|beachgoers|"
+    r"sunbather|sunbathers|freediver|freedivers|freediving|snorkeler|snorkelers|instructor|"
+    r"passenger|passengers|crew|guided|tour|class|students|marines|marine corps)\b", re.I)
+HUMAN_CAT = re.compile(
+    r"(people|persons|humans|\bmen\b|\bwomen\b|children|boys|girls|divers|diving|scuba|snorkel|"
+    r"tourists|visitors|portrait|selfie|swimmers|surfers|lifeguard|sailors|soldiers|navy|beachgoers|"
+    r"sunbathers|bathers|crowds|models|swimming pools|recreation|tourism|water sports)", re.I)
+
 OCEAN_TERM = re.compile(r"(ocean|sea|marine|underwater|coral|reef|coast|beach|shore|wave|water|dive|diver|whale|"
                         r"shark|dolphin|turtle|fish|island|lagoon|tide|surf|bay|cliff|harbour|harbor|strait|gulf|"
                         r"iceberg|arctic|antarctic|polar|deep|abyss|kelp|seagrass|sand|jellyfish|octopus|squid|"
@@ -38,7 +57,10 @@ JUNK_CAT = re.compile(r"(painting|drawing|illustration|diagram|map|book|engravin
                       r"manuscript|document|chart|logo|sign|poster|cartoon|comic|icon|screenshot|phylogen|anatom|"
                       r"watercolour|sketch|postcard|advertis|encycloped|dictionar|newspaper|magazine|in art|\bart\b)", re.I)
 
-# (id, label, commons category or None, search fallback, subject keywords)
+# (id, label, commons category or None, search fallback, subject keywords[, must-match groups])
+MARINE_SUBJECT = ["marine,sea,ocean,whale,shark,turtle,seal,coral,dolphin,stingray,fish,crustacean,"
+                  "mollusc,octopus,jellyfish,seahorse,penguin,orca,dugong,manatee,seagrass"]
+
 CATEGORIES = [
     ("blue-whales", "Blue Whales", "Balaenoptera musculus", "blue whale", ["whale", "balaenoptera"]),
     ("humpback-whales", "Humpback Whales", "Megaptera novaeangliae", "humpback whale", ["humpback", "megaptera", "whale"]),
@@ -57,7 +79,7 @@ CATEGORIES = [
     ("clownfish", "Clownfish", "Amphiprioninae", "clownfish", ["clownfish", "amphiprion", "anemonefish"]),
     ("tropical-fish", "Tropical Fish", "Pomacentridae", "tropical reef fish", ["fish", "pomacentridae"]),
     ("penguins", "Penguins", "Spheniscidae", "penguin", ["penguin"]),
-    ("seals", "Seals", "Phocidae", "seal underwater", ["seal", "phoca"]),
+    ("seals", "Seals", "Phoca vitulina", "seal underwater", ["seal", "phoca"]),
     ("sea-lions", "Sea Lions", "Otariidae", "sea lion", ["sea lion", "otari", "zalophus"]),
     ("crabs", "Crabs", "Brachyura", "crab", ["crab"]),
     ("lobsters", "Lobsters", "Nephropidae", "lobster", ["lobster", "homarus"]),
@@ -65,7 +87,7 @@ CATEGORIES = [
     ("deep-sea", "Deep Sea", "Deep sea", "deep sea", ["deep", "abyss", "benthic"]),
     ("underwater-world", "Underwater World", "Underwater", "underwater reef", ["underwater", "reef", "diver"]),
     ("coral-reefs", "Coral Reefs", "Coral reefs", "coral reef", ["coral", "reef"]),
-    ("ocean-caves", "Ocean Caves", None, "underwater cave diving", ["cave", "cavern", "grotto"]),
+    ("ocean-caves", "Ocean Caves", None, "sea cave interior", ["cave", "cavern", "grotto"]),
     ("blue-ocean", "Blue Ocean", "Ocean", "blue ocean sea", ["ocean", "sea", "water"]),
     ("tropical-sea", "Tropical Sea", "Turquoise water", "tropical sea", ["turquoise", "lagoon", "sea", "water"]),
     ("open-ocean", "Open Ocean", "Ocean", "open ocean horizon", ["ocean", "sea", "horizon"]),
@@ -75,7 +97,7 @@ CATEGORIES = [
     ("beaches", "Beautiful Beaches", "Beaches", "tropical beach", ["beach", "sand", "coast"]),
     ("ocean-waves", "Ocean Waves", "Water waves", "ocean waves", ["wave", "surf", "sea"]),
     ("sea-cliffs", "Sea Cliffs", "Sea cliffs", "sea cliff", ["cliff", "coast"]),
-    ("rocky-coastlines", "Rocky Coastlines", None, "rocky coastline", ["rock", "coast", "shore"]),
+    ("rocky-coastlines", "Rocky Coastlines", None, "rocky shore ocean", ["rock", "coast", "shore"]),
     ("tropical-islands", "Tropical Islands", "Atolls", "tropical island", ["atoll", "island", "lagoon"]),
     ("sunset-over-ocean", "Sunset Over Ocean", None, "sunset over ocean", ["sunset"]),
     ("sunrise-over-sea", "Sunrise Over Sea", None, "sunrise over sea", ["sunrise", "dawn"]),
@@ -90,8 +112,8 @@ CATEGORIES = [
     ("colorful-underwater", "Colorful Underwater Life", "Coral reefs", "colorful coral reef fish", ["coral", "fish", "color"]),
     ("peaceful-ocean", "Peaceful Ocean", None, "calm ocean horizon", ["calm", "ocean", "horizon"]),
     ("dark-ocean", "Dark Ocean", None, "dark ocean night", ["dark", "night", "ocean"]),
-    ("rare-marine-species", "Rare Marine Species", None, "rare marine species", ["rare", "marine"]),
-    ("endangered-marine", "Endangered Marine Animals", None, "endangered marine species", ["endangered"]),
+    ("rare-marine-species", "Rare Marine Species", "Vampyroteuthis infernalis", "rare sea creature", ["vampyro", "squid", "rare", "endemic"]),
+    ("endangered-marine", "Endangered Marine Animals", None, "endangered marine species", ["endangered"], MARINE_SUBJECT),
 ]
 
 
@@ -127,7 +149,8 @@ def licence_ok(name, url):
 
 
 def probe(entry):
-    cid, label, category, search, keywords = entry
+    cid, label, category, search, keywords = entry[:5]
+    must = entry[5] if len(entry) > 5 else []
     hits, seen = [], set()
     cursor = None
     for round_no in range(2):
@@ -173,8 +196,15 @@ def probe(entry):
             cats = [c["title"].replace("Category:", "") for c in (page.get("categories") or [])]
             if any(JUNK_CAT.search(c) for c in cats):
                 continue
-            blob = (title + " " + clean(meta.get("ImageDescription", {}).get("value")) + " " + " ".join(cats)).lower()
-            if not any(k in blob for k in keywords):
+            desc = clean(meta.get("ImageDescription", {}).get("value"))
+            if HUMAN_TERM.search(title) or (desc and HUMAN_TERM.search(desc)):
+                continue
+            if any(HUMAN_CAT.search(c) for c in cats):
+                continue
+            blob = (title + " " + desc + " " + " ".join(cats)).lower()
+            if keywords and not any(k in blob for k in keywords):
+                continue
+            if not all(any(t.strip() in blob for t in grp.split(",")) for grp in must):
                 continue
             if category is None and not OCEAN_TERM.search(blob):
                 continue

@@ -36,6 +36,7 @@ the live Commons API — these are not mockups.
 | Attribution | `extmetadata` → Artist, Credit, LicenseShortName, LicenseUrl, ImageDescription, DateTimeOriginal |
 | Licence gate | Strict allow-list: CC0, Public Domain, CC BY, CC BY-SA. Anything NC/ND/fair-use/unknown is rejected |
 | Quality gate | JPEG photographs only; rejects maps, diagrams, paintings, book plates and taxonomy charts |
+| **Ocean only, no people** | Photographs showing people are rejected — divers, tourists, swimmers, crowds, boats crewed by people, statues and museum specimens are filtered out by title, description and category signals |
 | Duplicate prevention | Room primary key `(feedKey, pageId)` with `OnConflictStrategy.IGNORE` |
 | Search | Debounced (450 ms) full-text search with infinite scroll and saved recent searches |
 | Daily wallpaper | Deterministic rotating query per day, cached per calendar date |

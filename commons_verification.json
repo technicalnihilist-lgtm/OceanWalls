@@ -2,16 +2,8 @@
  {
   "id": "blue-whales",
   "label": "Blue Whales",
-  "hits": 25,
+  "hits": 22,
   "samples": [
-   {
-    "title": "File:20160130 Sri Lanka 4271 crop Indian Ocean sRGB (25744960026).jpg",
-    "licence": "CC BY-SA 2.0",
-    "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
-    "size": "3023x2267",
-    "artist": "Dan Lundberg",
-    "source": "https://commons.wikimedia.org/wiki/File:20160130_Sri_Lanka_4271_crop_Indian_Ocean_sRGB_(25744960026).jpg"
-   },
    {
     "title": "File:2024-08-11 Blue whale Isfjord Svalbard 03.jpg",
     "licence": "CC BY-SA 4.0",
@@ -19,22 +11,22 @@
     "size": "3517x1978",
     "artist": "Carina Gsottbauer",
     "source": "https://commons.wikimedia.org/wiki/File:2024-08-11_Blue_whale_Isfjord_Svalbard_03.jpg"
+   },
+   {
+    "title": "File:2024-08-11 Blue whale Isfjord Svalbard 02.jpg",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "size": "4302x2420",
+    "artist": "Carina Gsottbauer",
+    "source": "https://commons.wikimedia.org/wiki/File:2024-08-11_Blue_whale_Isfjord_Svalbard_02.jpg"
    }
   ]
  },
  {
   "id": "humpback-whales",
   "label": "Humpback Whales",
-  "hits": 38,
+  "hits": 29,
   "samples": [
-   {
-    "title": "File:Anim1087 - Flickr - NOAA Photo Library.jpg",
-    "licence": "Public domain",
-    "licenceUrl": "",
-    "size": "2048x1536",
-    "artist": "NOAA Photo Library",
-    "source": "https://commons.wikimedia.org/wiki/File:Anim1087_-_Flickr_-_NOAA_Photo_Library.jpg"
-   },
    {
     "title": "File:Anim1086 - Flickr - NOAA Photo Library.jpg",
     "licence": "Public domain",
@@ -42,22 +34,22 @@
     "size": "2048x1536",
     "artist": "NOAA Photo Library",
     "source": "https://commons.wikimedia.org/wiki/File:Anim1086_-_Flickr_-_NOAA_Photo_Library.jpg"
+   },
+   {
+    "title": "File:Baleia Jubarte F\u00eamea.jpg",
+    "licence": "CC BY-SA 3.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "size": "6144x4096",
+    "artist": "Jonathan Wilkins",
+    "source": "https://commons.wikimedia.org/wiki/File:Baleia_Jubarte_F%C3%AAmea.jpg"
    }
   ]
  },
  {
   "id": "dolphins",
   "label": "Dolphins",
-  "hits": 24,
+  "hits": 21,
   "samples": [
-   {
-    "title": "File:Captive dolphins perform tricks for human tourists.jpg",
-    "licence": "CC BY 2.0",
-    "licenceUrl": "https://creativecommons.org/licenses/by/2.0",
-    "size": "4256x2832",
-    "artist": "TheAnimalDay.org",
-    "source": "https://commons.wikimedia.org/wiki/File:Captive_dolphins_perform_tricks_for_human_tourists.jpg"
-   },
    {
     "title": "File:Bottlenose Dolphin swimming in the Florida Bay. (b4a6f281-1be2-4c81-8140-fdcdb994b882).jpg",
     "licence": "Public domain",
@@ -65,13 +57,21 @@
     "size": "4416x3312",
     "artist": "NPS photo",
     "source": "https://commons.wikimedia.org/wiki/File:Bottlenose_Dolphin_swimming_in_the_Florida_Bay._(b4a6f281-1be2-4c81-8140-fdcdb994b882).jpg"
+   },
+   {
+    "title": "File:Boudewijn Seapark 22-02-2023 17-20-26.jpg",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "size": "1610x906",
+    "artist": "Paul Hermans",
+    "source": "https://commons.wikimedia.org/wiki/File:Boudewijn_Seapark_22-02-2023_17-20-26.jpg"
    }
   ]
  },
  {
   "id": "sharks",
   "label": "Sharks",
-  "hits": 20,
+  "hits": 12,
   "samples": [
    {
     "title": "File:Bamboo shark trawling bycatch.jpg",
@@ -94,16 +94,8 @@
  {
   "id": "great-white-sharks",
   "label": "Great White Sharks",
-  "hits": 30,
+  "hits": 23,
   "samples": [
-   {
-    "title": "File:Chuming the water.jpg",
-    "licence": "CC BY-SA 3.0",
-    "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-    "size": "1536x1172",
-    "artist": "Brocken Inaglory",
-    "source": "https://commons.wikimedia.org/wiki/File:Chuming_the_water.jpg"
-   },
    {
     "title": "File:Carcharodon carcharias.jpg",
     "licence": "Public domain",
@@ -111,13 +103,21 @@
     "size": "3264x2448",
     "artist": "Sharkdiver.com",
     "source": "https://commons.wikimedia.org/wiki/File:Carcharodon_carcharias.jpg"
+   },
+   {
+    "title": "File:Banana Shark.jpg",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "size": "3264x2448",
+    "artist": "Watermeloncat2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Banana_Shark.jpg"
    }
   ]
  },
  {
   "id": "whale-sharks",
   "label": "Whale Sharks",
-  "hits": 23,
+  "hits": 18,
   "samples": [
    {
     "title": "File:Rhincodon typus fgbnms.jpg",
@@ -140,16 +140,8 @@
  {
   "id": "orcas",
   "label": "Orcas",
-  "hits": 12,
+  "hits": 11,
   "samples": [
-   {
-    "title": "File:091201 south georgia orca 5127 (4173388802).jpg",
-    "licence": "CC BY 2.0",
-    "licenceUrl": "https://creativecommons.org/licenses/by/2.0",
-    "size": "1280x874",
-    "artist": "Christopher Michel",
-    "source": "https://commons.wikimedia.org/wiki/File:091201_south_georgia_orca_5127_(4173388802).jpg"
-   },
    {
     "title": "File:-i---i- (5422467431).jpg",
     "licence": "CC BY 2.0",
@@ -157,22 +149,22 @@
     "size": "1336x891",
     "artist": "Tim Wilson from Blaine, MN, USA",
     "source": "https://commons.wikimedia.org/wiki/File:-i---i-_(5422467431).jpg"
+   },
+   {
+    "title": "File:Killerwhales jumping.jpg",
+    "licence": "Public domain",
+    "licenceUrl": "",
+    "size": "2186x1453",
+    "artist": "Robert Pittman",
+    "source": "https://commons.wikimedia.org/wiki/File:Killerwhales_jumping.jpg"
    }
   ]
  },
  {
   "id": "sea-turtles",
   "label": "Sea Turtles",
-  "hits": 35,
+  "hits": 32,
   "samples": [
-   {
-    "title": "File:A person taking a photo of a sea turtle at the Mote Marine Laboratory.jpg",
-    "licence": "CC BY-SA 4.0",
-    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-    "size": "4928x3264",
-    "artist": "Goose Green Photography",
-    "source": "https://commons.wikimedia.org/wiki/File:A_person_taking_a_photo_of_a_sea_turtle_at_the_Mote_Marine_Laboratory.jpg"
-   },
    {
     "title": "File:Allopleuron hofmanni NHMM 0001 1.jpg",
     "licence": "CC BY-SA 4.0",
@@ -180,22 +172,22 @@
     "size": "3936x2624",
     "artist": "EdiaKra",
     "source": "https://commons.wikimedia.org/wiki/File:Allopleuron_hofmanni_NHMM_0001_1.jpg"
+   },
+   {
+    "title": "File:0333 \u05e6\u05d1 \u05d9\u05dd \u05d1\u05e8\u05d0\u05e1 \u05de\u05d5\u05d7\u05de\u05d3.jpg",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "size": "4075x2984",
+    "artist": "Ben Shoshana",
+    "source": "https://commons.wikimedia.org/wiki/File:0333_%D7%A6%D7%91_%D7%99%D7%9D_%D7%91%D7%A8%D7%90%D7%A1_%D7%9E%D7%95%D7%97%D7%9E%D7%93.jpg"
    }
   ]
  },
  {
   "id": "octopus",
   "label": "Octopus",
-  "hits": 31,
+  "hits": 28,
   "samples": [
-   {
-    "title": "File:Amazing octopus!.jpg",
-    "licence": "CC BY-SA 4.0",
-    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-    "size": "4896x3672",
-    "artist": "Galaxyz27",
-    "source": "https://commons.wikimedia.org/wiki/File:Amazing_octopus!.jpg"
-   },
    {
     "title": "File:Camouflage octopus.jpg",
     "licence": "CC BY 4.0",
@@ -203,13 +195,21 @@
     "size": "5472x3648",
     "artist": "alana barthel",
     "source": "https://commons.wikimedia.org/wiki/File:Camouflage_octopus.jpg"
+   },
+   {
+    "title": "File:B\u1ea1ch tu\u1ed9c Vi\u1ec7t Nam t\u1ea1i qu\u00e1n R\u1ea1n Bi\u1ec3n n\u0103m 2016 (1).jpg",
+    "licence": "Public domain",
+    "licenceUrl": "",
+    "size": "3337x2835",
+    "artist": "Ph\u01b0\u01a1ng Huy (th\u1ea3o lu\u1eadn)",
+    "source": "https://commons.wikimedia.org/wiki/File:B%E1%BA%A1ch_tu%E1%BB%99c_Vi%E1%BB%87t_Nam_t%E1%BA%A1i_qu%C3%A1n_R%E1%BA%A1n_Bi%E1%BB%83n_n%C4%83m_2016_(1).jpg"
    }
   ]
  },
  {
   "id": "squid",
   "label": "Squid",
-  "hits": 23,
+  "hits": 16,
   "samples": [
    {
     "title": "File:Caribbean Reef Squid colors.jpg",
@@ -232,7 +232,7 @@
  {
   "id": "jellyfish",
   "label": "Jellyfish",
-  "hits": 29,
+  "hits": 25,
   "samples": [
    {
     "title": "File:- panoramio - jetsun (11).jpg",
@@ -278,30 +278,30 @@
  {
   "id": "stingrays",
   "label": "Stingrays",
-  "hits": 21,
+  "hits": 13,
   "samples": [
    {
-    "title": "File:A Southern Stingrays at the fisherman ship.jpg",
+    "title": "File:Stingray in shallows.jpg",
     "licence": "CC BY-SA 4.0",
     "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-    "size": "5184x3888",
-    "artist": "Peachyeung316",
-    "source": "https://commons.wikimedia.org/wiki/File:A_Southern_Stingrays_at_the_fisherman_ship.jpg"
+    "size": "4608x3456",
+    "artist": "PRFenelon",
+    "source": "https://commons.wikimedia.org/wiki/File:Stingray_in_shallows.jpg"
    },
    {
-    "title": "File:20191212 Luang Prabang stingray sale-1.jpg",
-    "licence": "Public domain",
-    "licenceUrl": "",
-    "size": "5760x3840",
-    "artist": "Balon Greyjoy",
-    "source": "https://commons.wikimedia.org/wiki/File:20191212_Luang_Prabang_stingray_sale-1.jpg"
+    "title": "File:Chevrolet Corvette C3 Stingray IMG 3199.jpg",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "size": "5285x3513",
+    "artist": "Alexander Migl",
+    "source": "https://commons.wikimedia.org/wiki/File:Chevrolet_Corvette_C3_Stingray_IMG_3199.jpg"
    }
   ]
  },
  {
   "id": "manta-rays",
   "label": "Manta Rays",
-  "hits": 20,
+  "hits": 13,
   "samples": [
    {
     "title": "File:Lisboa Ocean\u00e1rio (10000903844).jpg",
@@ -324,7 +324,7 @@
  {
   "id": "clownfish",
   "label": "Clownfish",
-  "hits": 18,
+  "hits": 17,
   "samples": [
    {
     "title": "File:\u0635\u0646 \u0631\u0627\u064a\u0632 \u0631\u0648\u064a\u0627\u0644 \u0645\u0643\u0627\u062f\u064a \u0623\u0643\u0648\u0627 207.jpg",
@@ -347,7 +347,7 @@
  {
   "id": "tropical-fish",
   "label": "Tropical Fish",
-  "hits": 19,
+  "hits": 15,
   "samples": [
    {
     "title": "File:File by Alexander Baranov - . (5251916217).jpg",
@@ -370,53 +370,53 @@
  {
   "id": "penguins",
   "label": "Penguins",
-  "hits": 25,
+  "hits": 21,
   "samples": [
    {
-    "title": "File:Heard Island penguin rookery (6433879655).jpg",
-    "licence": "No restrictions",
-    "licenceUrl": "https://www.flickr.com/commons/usage/",
-    "size": "1400x1102",
-    "artist": "State Library of New South Wales collection",
-    "source": "https://commons.wikimedia.org/wiki/File:Heard_Island_penguin_rookery_(6433879655).jpg"
+    "title": "File:Petermann-island 20241228 182133204.jpg",
+    "licence": "CC BY 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by/4.0",
+    "size": "4032x3024",
+    "artist": "Bangerth",
+    "source": "https://commons.wikimedia.org/wiki/File:Petermann-island_20241228_182133204.jpg"
    },
    {
-    "title": "File:Penguins statue at Orchard Gateway.jpg",
-    "licence": "CC BY-SA 4.0",
-    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-    "size": "4640x3472",
-    "artist": "Blemi",
-    "source": "https://commons.wikimedia.org/wiki/File:Penguins_statue_at_Orchard_Gateway.jpg"
+    "title": "File:Petermann-island 20241228 183331792.jpg",
+    "licence": "CC BY 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by/4.0",
+    "size": "3024x4032",
+    "artist": "Bangerth",
+    "source": "https://commons.wikimedia.org/wiki/File:Petermann-island_20241228_183331792.jpg"
    }
   ]
  },
  {
   "id": "seals",
   "label": "Seals",
-  "hits": 17,
+  "hits": 9,
   "samples": [
    {
-    "title": "File:US Navy 070202-N-5169H-476 Basic Underwater Demolition-SEAL (BUD-S) students ride a wave in on their inflatable boat.jpg",
-    "licence": "Public domain",
-    "licenceUrl": "",
-    "size": "2497x1756",
-    "artist": "U.S. Navy photo by Mass Communication Specialist 2nd Class Marcos T. H",
-    "source": "https://commons.wikimedia.org/wiki/File:US_Navy_070202-N-5169H-476_Basic_Underwater_Demolition-SEAL_(BUD-S)_students_ride_a_wave_in_on_their_inflatable_boat.jpg"
+    "title": "File:Seattle ballard locks harbor seal 2.jpg",
+    "licence": "CC0",
+    "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "size": "2268x2268",
+    "artist": "Ursacascadia",
+    "source": "https://commons.wikimedia.org/wiki/File:Seattle_ballard_locks_harbor_seal_2.jpg"
    },
    {
-    "title": "File:US Navy 030622-N-3953L-106 Basic Underwater Demolition-SEAL (BUD-S) students participate in Log PT (physical training) during Hell Week.jpg",
-    "licence": "Public domain",
-    "licenceUrl": "",
-    "size": "2400x1500",
-    "artist": "U.S. Navy photo by Photographer's Mate 2nd Class Eric S. Logsdon",
-    "source": "https://commons.wikimedia.org/wiki/File:US_Navy_030622-N-3953L-106_Basic_Underwater_Demolition-SEAL_(BUD-S)_students_participate_in_Log_PT_(physical_training)_during_Hell_Week.jpg"
+    "title": "File:Seattle ballard locks harbor seal 4.jpg",
+    "licence": "CC0",
+    "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "size": "2260x2260",
+    "artist": "Ursacascadia",
+    "source": "https://commons.wikimedia.org/wiki/File:Seattle_ballard_locks_harbor_seal_4.jpg"
    }
   ]
  },
  {
   "id": "sea-lions",
   "label": "Sea Lions",
-  "hits": 22,
+  "hits": 21,
   "samples": [
    {
     "title": "File:Seals - Flickr - dps.jpg",
@@ -439,7 +439,7 @@
  {
   "id": "crabs",
   "label": "Crabs",
-  "hits": 31,
+  "hits": 29,
   "samples": [
    {
     "title": "File:Juvenile Atlantic Ghost Crab.JPG",
@@ -462,7 +462,7 @@
  {
   "id": "lobsters",
   "label": "Lobsters",
-  "hits": 24,
+  "hits": 19,
   "samples": [
    {
     "title": "File:Delicious Lobster (228745317).jpeg",
@@ -473,42 +473,42 @@
     "source": "https://commons.wikimedia.org/wiki/File:Delicious_Lobster_(228745317).jpeg"
    },
    {
-    "title": "File:HFCA 1607 Special Events And VIPS Volume 1 113.jpg (77c777ff7b0a47d18c318ae9af9eb557).jpg",
-    "licence": "Public domain",
-    "licenceUrl": "",
-    "size": "7637x5277",
-    "artist": "Cecil W. Stoughton",
-    "source": "https://commons.wikimedia.org/wiki/File:HFCA_1607_Special_Events_And_VIPS_Volume_1_113.jpg_(77c777ff7b0a47d18c318ae9af9eb557).jpg"
+    "title": "File:A Maine Lobster.jpg",
+    "licence": "CC BY 2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by/2.0",
+    "size": "3888x2592",
+    "artist": "Paul Schultz",
+    "source": "https://commons.wikimedia.org/wiki/File:A_Maine_Lobster.jpg"
    }
   ]
  },
  {
   "id": "starfish",
   "label": "Starfish",
-  "hits": 23,
+  "hits": 5,
   "samples": [
    {
-    "title": "File:Asteroidea (USNM 1449049) 001.jpeg",
-    "licence": "CC0",
-    "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-    "size": "1920x1320",
-    "artist": "Karen Osborn",
-    "source": "https://commons.wikimedia.org/wiki/File:Asteroidea_(USNM_1449049)_001.jpeg"
+    "title": "File:A star F.jpg",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "size": "2160x3840",
+    "artist": "Adildxb110",
+    "source": "https://commons.wikimedia.org/wiki/File:A_star_F.jpg"
    },
    {
-    "title": "File:Asteroidea (USNM 1449046) 003.jpeg",
-    "licence": "CC0",
-    "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-    "size": "1920x1320",
-    "artist": "Karen Osborn",
-    "source": "https://commons.wikimedia.org/wiki/File:Asteroidea_(USNM_1449046)_003.jpeg"
+    "title": "File:Asterias rubens, dissection modified.jpg",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "size": "1234x1080",
+    "artist": "Hans Hillewaert",
+    "source": "https://commons.wikimedia.org/wiki/File:Asterias_rubens,_dissection_modified.jpg"
    }
   ]
  },
  {
   "id": "deep-sea",
   "label": "Deep Sea",
-  "hits": 18,
+  "hits": 15,
   "samples": [
    {
     "title": "File:Blackbelly Lantern Shark.jpg",
@@ -531,7 +531,7 @@
  {
   "id": "underwater-world",
   "label": "Underwater World",
-  "hits": 33,
+  "hits": 31,
   "samples": [
    {
     "title": "File:AlpenquaiLacusTuricini-20120410i.jpg",
@@ -554,7 +554,7 @@
  {
   "id": "coral-reefs",
   "label": "Coral Reefs",
-  "hits": 19,
+  "hits": 18,
   "samples": [
    {
     "title": "File:Acropora coral ffs.jpg",
@@ -580,59 +580,51 @@
   "hits": 11,
   "samples": [
    {
-    "title": "File:Cave diving equipment.JPG",
-    "licence": "Public domain",
-    "licenceUrl": "",
-    "size": "3264x2448",
-    "artist": "Rodw",
-    "source": "https://commons.wikimedia.org/wiki/File:Cave_diving_equipment.JPG"
+    "title": "File:Sanndanheki cave inside.JPG",
+    "licence": "CC BY-SA 3.0",
+    "licenceUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "size": "1280x960",
+    "artist": "\u30ed\u30ea",
+    "source": "https://commons.wikimedia.org/wiki/File:Sanndanheki_cave_inside.JPG"
    },
    {
-    "title": "File:In Ordinskaya cave.jpg",
-    "licence": "CC BY 3.0",
-    "licenceUrl": "https://creativecommons.org/licenses/by/3.0",
-    "size": "4000x3000",
-    "artist": "Maximovich Nikolay",
-    "source": "https://commons.wikimedia.org/wiki/File:In_Ordinskaya_cave.jpg"
+    "title": "File:INTERIOR OF LARGE CAVE - NARA - 520127.jpg",
+    "licence": "Public domain",
+    "licenceUrl": "",
+    "size": "3000x2071",
+    "artist": "George A. Grant",
+    "source": "https://commons.wikimedia.org/wiki/File:INTERIOR_OF_LARGE_CAVE_-_NARA_-_520127.jpg"
    }
   ]
  },
  {
   "id": "blue-ocean",
   "label": "Blue Ocean",
-  "hits": 20,
+  "hits": 17,
   "samples": [
    {
-    "title": "File:171020-M-SX452-206 (38012987962).jpg",
-    "licence": "Public domain",
-    "licenceUrl": "",
-    "size": "2980x1676",
-    "artist": "U.S. Department of Defense Current Photos Cpl. Benjamin McDonald/Marin",
-    "source": "https://commons.wikimedia.org/wiki/File:171020-M-SX452-206_(38012987962).jpg"
+    "title": "File:Marine-Ehrenmal Laboe Platz.jpg",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "size": "3315x1968",
+    "artist": "Tobiasi0",
+    "source": "https://commons.wikimedia.org/wiki/File:Marine-Ehrenmal_Laboe_Platz.jpg"
    },
    {
-    "title": "File:Marine Stinger Instructions-1 (11371761134).jpg",
-    "licence": "CC BY-SA 2.0",
-    "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
-    "size": "1300x1910",
-    "artist": "Sheba_Also 43,000 photos",
-    "source": "https://commons.wikimedia.org/wiki/File:Marine_Stinger_Instructions-1_(11371761134).jpg"
+    "title": "File:Maquette d'une pirogue.jpg",
+    "licence": "Public domain",
+    "licenceUrl": "",
+    "size": "3805x2740",
+    "artist": "Francois Edmond P\u00e2ris",
+    "source": "https://commons.wikimedia.org/wiki/File:Maquette_d%27une_pirogue.jpg"
    }
   ]
  },
  {
   "id": "tropical-sea",
   "label": "Tropical Sea",
-  "hits": 27,
+  "hits": 23,
   "samples": [
-   {
-    "title": "File:A girl in a swimming pool - underwater.jpg",
-    "licence": "CC BY 2.0",
-    "licenceUrl": "https://creativecommons.org/licenses/by/2.0",
-    "size": "2048x1520",
-    "artist": "Reg Mckenna from UK",
-    "source": "https://commons.wikimedia.org/wiki/File:A_girl_in_a_swimming_pool_-_underwater.jpg"
-   },
    {
     "title": "File:Blautopf-tuerkis.jpg",
     "licence": "CC BY-SA 3.0",
@@ -640,36 +632,44 @@
     "size": "2272x1704",
     "artist": "Bj\u00f6rn Appel",
     "source": "https://commons.wikimedia.org/wiki/File:Blautopf-tuerkis.jpg"
+   },
+   {
+    "title": "File:Alimini Otranto.jpg",
+    "licence": "Public domain",
+    "licenceUrl": "",
+    "size": "1600x1200",
+    "artist": "Colar",
+    "source": "https://commons.wikimedia.org/wiki/File:Alimini_Otranto.jpg"
    }
   ]
  },
  {
   "id": "open-ocean",
   "label": "Open Ocean",
-  "hits": 25,
+  "hits": 19,
   "samples": [
    {
-    "title": "File:171020-M-SX452-206 (38012987962).jpg",
-    "licence": "Public domain",
-    "licenceUrl": "",
-    "size": "2980x1676",
-    "artist": "U.S. Department of Defense Current Photos Cpl. Benjamin McDonald/Marin",
-    "source": "https://commons.wikimedia.org/wiki/File:171020-M-SX452-206_(38012987962).jpg"
+    "title": "File:Marine-Ehrenmal Laboe Platz.jpg",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "size": "3315x1968",
+    "artist": "Tobiasi0",
+    "source": "https://commons.wikimedia.org/wiki/File:Marine-Ehrenmal_Laboe_Platz.jpg"
    },
    {
-    "title": "File:Marine Stinger Instructions-1 (11371761134).jpg",
-    "licence": "CC BY-SA 2.0",
-    "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
-    "size": "1300x1910",
-    "artist": "Sheba_Also 43,000 photos",
-    "source": "https://commons.wikimedia.org/wiki/File:Marine_Stinger_Instructions-1_(11371761134).jpg"
+    "title": "File:Maquette d'une pirogue.jpg",
+    "licence": "Public domain",
+    "licenceUrl": "",
+    "size": "3805x2740",
+    "artist": "Francois Edmond P\u00e2ris",
+    "source": "https://commons.wikimedia.org/wiki/File:Maquette_d%27une_pirogue.jpg"
    }
   ]
  },
  {
   "id": "ocean-floor",
   "label": "Ocean Floor",
-  "hits": 31,
+  "hits": 25,
   "samples": [
    {
     "title": "File:2010-09-25 16-01-08 Namibia Hardap Hammerstein.jpg",
@@ -692,7 +692,7 @@
  {
   "id": "underwater-sunlight",
   "label": "Underwater Sunlight",
-  "hits": 21,
+  "hits": 10,
   "samples": [
    {
     "title": "File:Anaklasi3.jpg",
@@ -715,7 +715,7 @@
  {
   "id": "underwater-plants",
   "label": "Underwater Plants",
-  "hits": 18,
+  "hits": 17,
   "samples": [
    {
     "title": "File:Florida- 1705 Egmont Key seagrasses.JPG",
@@ -738,7 +738,7 @@
  {
   "id": "beaches",
   "label": "Beautiful Beaches",
-  "hits": 37,
+  "hits": 32,
   "samples": [
    {
     "title": "File:20120522-DSC00314-2-3 (7331498400).jpg",
@@ -761,7 +761,7 @@
  {
   "id": "ocean-waves",
   "label": "Ocean Waves",
-  "hits": 32,
+  "hits": 24,
   "samples": [
    {
     "title": "File:- panoramio (3589).jpg",
@@ -784,7 +784,7 @@
  {
   "id": "sea-cliffs",
   "label": "Sea Cliffs",
-  "hits": 26,
+  "hits": 24,
   "samples": [
    {
     "title": "File:Ailladie-south.jpg",
@@ -807,30 +807,30 @@
  {
   "id": "rocky-coastlines",
   "label": "Rocky Coastlines",
-  "hits": 2,
+  "hits": 15,
   "samples": [
    {
-    "title": "File:Karadag rocky coastline, Crimea.jpg",
-    "licence": "CC BY 4.0",
-    "licenceUrl": "https://creativecommons.org/licenses/by/4.0",
-    "size": "4912x3264",
-    "artist": "Vyacheslav Argenberg",
-    "source": "https://commons.wikimedia.org/wiki/File:Karadag_rocky_coastline,_Crimea.jpg"
+    "title": "File:Small waves grinding the rocky shore of the Bengtskar island.jpg",
+    "licence": "CC BY-SA 3.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "size": "2592x1944",
+    "artist": "P\u00f6ll\u00f6",
+    "source": "https://commons.wikimedia.org/wiki/File:Small_waves_grinding_the_rocky_shore_of_the_Bengtskar_island.jpg"
    },
    {
-    "title": "File:Malapascua, Rocky shore, Rocky coastline, Philippines.jpg",
-    "licence": "CC BY 4.0",
-    "licenceUrl": "https://creativecommons.org/licenses/by/4.0",
-    "size": "4000x2667",
-    "artist": "Vyacheslav Argenberg",
-    "source": "https://commons.wikimedia.org/wiki/File:Malapascua,_Rocky_shore,_Rocky_coastline,_Philippines.jpg"
+    "title": "File:SEA LIONS ON A ROCKY SHORE - NARA - 520125.jpg",
+    "licence": "Public domain",
+    "licenceUrl": "",
+    "size": "3000x1997",
+    "artist": "Unknown authorUnknown author or not provided",
+    "source": "https://commons.wikimedia.org/wiki/File:SEA_LIONS_ON_A_ROCKY_SHORE_-_NARA_-_520125.jpg"
    }
   ]
  },
  {
   "id": "tropical-islands",
   "label": "Tropical Islands",
-  "hits": 18,
+  "hits": 14,
   "samples": [
    {
     "title": "File:Erosion of tephra layers - Lanzarote 01.JPG",
@@ -876,7 +876,7 @@
  {
   "id": "sunrise-over-sea",
   "label": "Sunrise Over Sea",
-  "hits": 15,
+  "hits": 14,
   "samples": [
    {
     "title": "File:Full-orbed sunrise over East Sea in South Korea.JPG",
@@ -899,7 +899,7 @@
  {
   "id": "stormy-ocean",
   "label": "Stormy Ocean",
-  "hits": 7,
+  "hits": 6,
   "samples": [
    {
     "title": "File:Brighton stormy sea November 2009.jpg",
@@ -922,7 +922,7 @@
  {
   "id": "aerial-ocean",
   "label": "Aerial Ocean Photography",
-  "hits": 26,
+  "hits": 25,
   "samples": [
    {
     "title": "File:Greenland East Coast 6.jpg",
@@ -945,16 +945,8 @@
  {
   "id": "frozen-sea",
   "label": "Frozen Sea",
-  "hits": 39,
+  "hits": 26,
   "samples": [
-   {
-    "title": "File:\"Veslekari-ekspedisjonen\", 1928. Mannskap fors\u00f8ker \u00e5 skyve unna skruis - no-nb digifoto 20160121 00013 bldsa veslekari p19.jpg",
-    "licence": "Public domain",
-    "licenceUrl": "",
-    "size": "7453x6046",
-    "artist": "Harald Havstad",
-    "source": "https://commons.wikimedia.org/wiki/File:%22Veslekari-ekspedisjonen%22,_1928._Mannskap_fors%C3%B8ker_%C3%A5_skyve_unna_skruis_-_no-nb_digifoto_20160121_00013_bldsa_veslekari_p19.jpg"
-   },
    {
     "title": "File:\"Veslekari-ekspedisjonen\", 1928. Landskap med drivis - no-nb digifoto 20160121 00006 bldsa veslekari p06.jpg",
     "licence": "Public domain",
@@ -962,13 +954,21 @@
     "size": "7507x6055",
     "artist": "Harald Havstad",
     "source": "https://commons.wikimedia.org/wiki/File:%22Veslekari-ekspedisjonen%22,_1928._Landskap_med_drivis_-_no-nb_digifoto_20160121_00006_bldsa_veslekari_p06.jpg"
+   },
+   {
+    "title": "File:\"Veslekari-ekspedisjonen\", 1928. Mann fanger sel p\u00e5 isen - no-nb digifoto 20160121 00019 bldsa veslekari p33.jpg",
+    "licence": "Public domain",
+    "licenceUrl": "",
+    "size": "7504x6072",
+    "artist": "Harald Havstad",
+    "source": "https://commons.wikimedia.org/wiki/File:%22Veslekari-ekspedisjonen%22,_1928._Mann_fanger_sel_p%C3%A5_isen_-_no-nb_digifoto_20160121_00019_bldsa_veslekari_p33.jpg"
    }
   ]
  },
  {
   "id": "polar-ocean",
   "label": "Polar Ocean",
-  "hits": 29,
+  "hits": 28,
   "samples": [
    {
     "title": "File:1989 eisberg-pinguine02 hg.jpg",
@@ -991,7 +991,7 @@
  {
   "id": "sea-caves",
   "label": "Sea Caves",
-  "hits": 24,
+  "hits": 21,
   "samples": [
    {
     "title": "File:Beomseom Island.jpg",
@@ -1014,7 +1014,7 @@
  {
   "id": "deep-blue-collection",
   "label": "Deep Blue Collection",
-  "hits": 32,
+  "hits": 20,
   "samples": [
    {
     "title": "File:AlpenquaiLacusTuricini-20120410i.jpg",
@@ -1037,7 +1037,7 @@
  {
   "id": "mysterious-ocean",
   "label": "Mysterious Ocean",
-  "hits": 16,
+  "hits": 13,
   "samples": [
    {
     "title": "File:Diploria strigosa (symmetrical brain coral) (San Salvador Island, Bahamas) 2 (16107392786).jpg",
@@ -1060,30 +1060,30 @@
  {
   "id": "marine-giants",
   "label": "Marine Giants",
-  "hits": 19,
+  "hits": 16,
   "samples": [
    {
-    "title": "File:Male whale shark at Georgia Aquarium.jpg",
-    "licence": "CC BY-SA 2.5",
-    "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.5",
-    "size": "3456x2304",
-    "artist": "Zac Wolf",
-    "source": "https://commons.wikimedia.org/wiki/File:Male_whale_shark_at_Georgia_Aquarium.jpg"
+    "title": "File:Humpback Whale Underwater (37209287981).jpg",
+    "licence": "Public domain",
+    "licenceUrl": "",
+    "size": "3072x2048",
+    "artist": "National Marine Sanctuaries",
+    "source": "https://commons.wikimedia.org/wiki/File:Humpback_Whale_Underwater_(37209287981).jpg"
    },
    {
-    "title": "File:Mother and baby sperm whale.jpg",
-    "licence": "CC BY-SA 2.0",
-    "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
-    "size": "5115x2877",
-    "artist": "Gabriel Barathieu",
-    "source": "https://commons.wikimedia.org/wiki/File:Mother_and_baby_sperm_whale.jpg"
+    "title": "File:HIHWNMS Humpback Whale Underwater (49530678743).jpg",
+    "licence": "CC BY 2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by/2.0",
+    "size": "2138x3205",
+    "artist": "National Marine Sanctuaries",
+    "source": "https://commons.wikimedia.org/wiki/File:HIHWNMS_Humpback_Whale_Underwater_(49530678743).jpg"
    }
   ]
  },
  {
   "id": "colorful-underwater",
   "label": "Colorful Underwater Life",
-  "hits": 18,
+  "hits": 15,
   "samples": [
    {
     "title": "File:Acropora coral ffs.jpg",
@@ -1106,16 +1106,8 @@
  {
   "id": "peaceful-ocean",
   "label": "Peaceful Ocean",
-  "hits": 17,
+  "hits": 8,
   "samples": [
-   {
-    "title": "File:Ocean coast at sunset (Unsplash).jpg",
-    "licence": "CC0",
-    "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-    "size": "3456x1944",
-    "artist": "Grace Caadiang gracetan",
-    "source": "https://commons.wikimedia.org/wiki/File:Ocean_coast_at_sunset_(Unsplash).jpg"
-   },
    {
     "title": "File:Calm-sea-haleiwa (Unsplash).jpg",
     "licence": "CC0",
@@ -1123,75 +1115,83 @@
     "size": "5184x3456",
     "artist": "Jeremy Bishop tidesinourveins",
     "source": "https://commons.wikimedia.org/wiki/File:Calm-sea-haleiwa_(Unsplash).jpg"
+   },
+   {
+    "title": "File:Horizon from heaven.jpg",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "size": "2322x4128",
+    "artist": "Panjiku",
+    "source": "https://commons.wikimedia.org/wiki/File:Horizon_from_heaven.jpg"
    }
   ]
  },
  {
   "id": "dark-ocean",
   "label": "Dark Ocean",
-  "hits": 14,
+  "hits": 5,
   "samples": [
    {
-    "title": "File:Life on the ocean- (1845) (14596412780).jpg",
-    "licence": "No restrictions",
-    "licenceUrl": "https://www.flickr.com/commons/usage/",
-    "size": "2224x1424",
-    "artist": "Internet Archive Book Images",
-    "source": "https://commons.wikimedia.org/wiki/File:Life_on_the_ocean-_(1845)_(14596412780).jpg"
+    "title": "File:Sandy 2012-10-28 0642Z.jpg",
+    "licence": "Public domain",
+    "licenceUrl": "",
+    "size": "3556x3556",
+    "artist": "NASA Goddard Space Flight Center from Greenbelt, MD, USA",
+    "source": "https://commons.wikimedia.org/wiki/File:Sandy_2012-10-28_0642Z.jpg"
    },
    {
-    "title": "File:In the dark ocean.jpg",
+    "title": "File:Pacifica and Skyline Blvd night aerial.jpg",
     "licence": "CC BY-SA 4.0",
     "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-    "size": "4671x3251",
-    "artist": "Teemages",
-    "source": "https://commons.wikimedia.org/wiki/File:In_the_dark_ocean.jpg"
+    "size": "1392x1585",
+    "artist": "Dicklyon",
+    "source": "https://commons.wikimedia.org/wiki/File:Pacifica_and_Skyline_Blvd_night_aerial.jpg"
    }
   ]
  },
  {
   "id": "rare-marine-species",
   "label": "Rare Marine Species",
-  "hits": 18,
+  "hits": 5,
   "samples": [
    {
-    "title": "File:Mother sea otter with rare twin baby pups (9137193663).jpg",
-    "licence": "CC BY 2.0",
-    "licenceUrl": "https://creativecommons.org/licenses/by/2.0",
-    "size": "4515x2258",
-    "artist": "Mike Baird from Morro Bay, USA",
-    "source": "https://commons.wikimedia.org/wiki/File:Mother_sea_otter_with_rare_twin_baby_pups_(9137193663).jpg"
+    "title": "File:Vampyroteuthis infernalis.jpg",
+    "licence": "Public domain",
+    "licenceUrl": "",
+    "size": "1701x1149",
+    "artist": "Carl Chun",
+    "source": "https://commons.wikimedia.org/wiki/File:Vampyroteuthis_infernalis.jpg"
    },
    {
-    "title": "File:Mother sea otter with rare twin baby pups (9139425522).jpg",
-    "licence": "CC BY 2.0",
-    "licenceUrl": "https://creativecommons.org/licenses/by/2.0",
-    "size": "3037x2025",
-    "artist": "Mike Baird from Morro Bay, USA",
-    "source": "https://commons.wikimedia.org/wiki/File:Mother_sea_otter_with_rare_twin_baby_pups_(9139425522).jpg"
+    "title": "File:Vampyroteuthis infernalis dorsal view.jpg",
+    "licence": "Public domain",
+    "licenceUrl": "",
+    "size": "1504x988",
+    "artist": "Vampyroteuthis2.jpg: Carl Chun derivative work: Mgiganteus (talk)",
+    "source": "https://commons.wikimedia.org/wiki/File:Vampyroteuthis_infernalis_dorsal_view.jpg"
    }
   ]
  },
  {
   "id": "endangered-marine",
   "label": "Endangered Marine Animals",
-  "hits": 15,
+  "hits": 7,
   "samples": [
    {
-    "title": "File:U.S. Amphibious Assault Vehicles tear up MCB Hawaii ponds for endangered birds.jpg",
-    "licence": "Public domain",
-    "licenceUrl": "",
-    "size": "3000x1982",
-    "artist": "Marine Corps Base Hawaii \u2013 Kaneohe Bay, Photo by Lance Cpl. Reece Lodd",
-    "source": "https://commons.wikimedia.org/wiki/File:U.S._Amphibious_Assault_Vehicles_tear_up_MCB_Hawaii_ponds_for_endangered_birds.jpg"
+    "title": "File:CSIRO ScienceImage 10 The Endangered Spotted Handfish.jpg",
+    "licence": "CC BY 3.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by/3.0",
+    "size": "2305x1701",
+    "artist": "Barry Bruce, CSIRO",
+    "source": "https://commons.wikimedia.org/wiki/File:CSIRO_ScienceImage_10_The_Endangered_Spotted_Handfish.jpg"
    },
    {
-    "title": "File:HAWAIIAN STILT BIRD, AN ENDANGERED SPECIES, IS RETURNING TO NEST IN PONDS AT THE KANEOHE MARINE CORPS AIR STATION (ON... - NARA - 553777.jpg",
-    "licence": "Public domain",
-    "licenceUrl": "",
-    "size": "2036x3000",
-    "artist": "Charles O'Rear",
-    "source": "https://commons.wikimedia.org/wiki/File:HAWAIIAN_STILT_BIRD,_AN_ENDANGERED_SPECIES,_IS_RETURNING_TO_NEST_IN_PONDS_AT_THE_KANEOHE_MARINE_CORPS_AIR_STATION_(ON..._-_NARA_-_553777.jpg"
+    "title": "File:Philippine Teak (Tectona philippinensis)--an endangered and endemic tree 02.jpg",
+    "licence": "CC0",
+    "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "size": "2604x4624",
+    "artist": "Paul Christian B. Yang-ed",
+    "source": "https://commons.wikimedia.org/wiki/File:Philippine_Teak_(Tectona_philippinensis)--an_endangered_and_endemic_tree_02.jpg"
    }
   ]
  }

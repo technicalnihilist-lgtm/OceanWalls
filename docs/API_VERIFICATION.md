@@ -61,6 +61,22 @@ scans, screenshots, phylogenetic and anatomy diagrams, "… in art", models and 
 Subject keywords per category then keep only on-topic photographs, and a minimum resolution
 of 1200×800 removes thumbnails and low-quality crops.
 
+## Ocean only — no photographs of people
+
+`ImageQualityGate.isHumanFree` rejects a file when the title or the Commons description names a
+person or group, or when the file sits in a people/diver/tourist category. Word boundaries are
+used so marine vocabulary is not caught by accident (`manta` is not `man`, `tide pool` is not a
+swimming pool). Blocked terms include people, person, human, man, men, woman, women, girl, boy,
+child, children, tourist, visitor, crowd, swimmer, diver, diving, scuba, snorkel, surfer,
+lifeguard, model, portrait, selfie, couple, family, wedding, soldier, sailor, navy, marines,
+crew, fisherman, fishing, hand, foot, face, swimsuit, wetsuit, swimming pool, beachgoer,
+sunbather, freediver, instructor, passenger, tour, class, students — plus the matching
+categories (people, divers, diving, tourists, portraits, swimmers, beachgoers, tourism, …).
+
+Related non-photographic content is blocked at the same time: statues, sculptures, monuments,
+fossils, museum specimens, market and seafood shots, signs and instructions, military vehicles,
+satellite/hurricane imagery and space-telescope images.
+
 ## Notes on failure behaviour
 
 * 5xx and 429 responses are retried three times with backoff (`RetryInterceptor`).

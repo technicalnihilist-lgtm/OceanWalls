@@ -12,7 +12,13 @@ object ImageQualityGate {
             "screenshot|icon|symbol|plan|sketch|clipart|infographic|banner|flag|atlas|plate|" +
             "phylogen|wallet|equipment|serial|skull|skeleton|model|distribution|range map|ranger|" +
             "study|expedition|narrative|pamphlet|brochure|earth at night|compass|infographic|psf|" +
-            "comparison|comparisson|size|plot|scientific|wire rope|rope|industry|machine|factory|engine)",
+            "comparison|comparisson|size|plot|scientific|wire rope|rope|industry|machine|factory|engine|" +
+            "\\b(statue|sculpture|monument|fossil|specimen|holotype|museum|usnm|instructions|notice|" +
+            "warning|billboard|placard|chumming|chuming|market|sale|seafood|restaurant|cooking|dish|" +
+            "hurricane|typhoon|cyclone|satellite|military|vehicle|assault|amphibious|zoology|" +
+            "natural history|limestone|devonian|geologic|outcrop|hubble|galaxy|nebula|telescope|nasa|" +
+            "\\b(stilt|tern|gull|egret|heron|" +
+            "eagle|hawk|owl|sparrow|crane|flamingo|avocet|plover|sandpiper|pelican)\\b))",
         RegexOption.IGNORE_CASE
     )
 
@@ -25,6 +31,39 @@ object ImageQualityGate {
             "clipart|vector|pdf)",
         RegexOption.IGNORE_CASE
     )
+
+    /**
+     * Ocean imagery only: photographs that show people are rejected. Commons file pages
+     * describe their own content ("a diver swims...", "tourists on the beach"), and files
+     * with people are almost always filed under a people/diver/tourist category, so the
+     * title, description and category list together are a reliable signal.
+     */
+    private val HUMAN_TERM = Regex(
+        "\\b(people|person|persons|human|humans|man|men|woman|women|girl|girls|boy|boys|child|" +
+            "children|kid|kids|baby|infant|toddler|tourist|tourists|visitor|visitors|crowd|crowds|" +
+            "swimmer|swimmers|diver|divers|diving|scuba|snorkel\\w*|surfer|surfers|surfing|" +
+            "lifeguard|lifeguards|model|models|portrait|portraits|selfie|couple|couples|family|" +
+            "families|wedding|bride|groom|soldier|soldiers|sailor|sailors|navy|troops|worker|" +
+            "workers|fisherman|fishermen|fishing|hand|hands|foot|feet|leg|legs|face|faces|" +
+            "mermaid|swimsuit|bikini|wetsuit|swimming pool|beachgoer|beachgoers|sunbather|" +
+            "sunbathers|freediver|freedivers|freediving|snorkeler|snorkelers|instructor|" +
+            "passenger|passengers|crew|guided|tour|class|students|marines|marine corps|children's)\\b",
+        RegexOption.IGNORE_CASE
+    )
+
+    private val HUMAN_CATEGORY = Regex(
+        "(people|persons|humans|\\bmen\\b|\\bwomen\\b|children|boys|girls|divers|diving|" +
+            "scuba|snorkel|tourists|visitors|portrait|selfie|swimmers|surfers|lifeguard|sailors|" +
+            "soldiers|navy|beachgoers|sunbathers|bathers|crowds|models|swimming pools|" +
+            "recreation|tourism|water sports|water polo)",
+        RegexOption.IGNORE_CASE
+    )
+
+    fun isHumanFree(title: String, description: String, categories: List<String>): Boolean {
+        if (HUMAN_TERM.containsMatchIn(title)) return false
+        if (description.isNotBlank() && HUMAN_TERM.containsMatchIn(description)) return false
+        return categories.none { HUMAN_CATEGORY.containsMatchIn(it) }
+    }
 
     fun isPhotograph(title: String, categories: List<String>): Boolean {
         if (JUNK_TITLE.containsMatchIn(title.removePrefix("File:"))) return false
@@ -42,9 +81,15 @@ object ImageQualityGate {
 
     fun hasOceanTerm(haystack: String): Boolean = OCEAN_TERM.containsMatchIn(haystack)
 
-    fun matchesSubject(haystack: String, keywords: List<String>): Boolean {
-        if (keywords.isEmpty()) return true
+    fun matchesSubject(
+        haystack: String,
+        keywords: List<String>,
+        mustMatch: List<String> = emptyList()
+    ): Boolean {
         val lower = haystack.lowercase()
-        return keywords.any { lower.contains(it.lowercase()) }
+        if (keywords.isNotEmpty() && keywords.none { lower.contains(it.lowercase()) }) return false
+        return mustMatch.all { group ->
+            group.split(',').any { term -> lower.contains(term.trim().lowercase()) }
+        }
     }
 }

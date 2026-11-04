@@ -53,7 +53,9 @@ data class FeedSpec(
     val keywords: List<String>,
     val category: String? = null,
     val minWidth: Int = 1200,
-    val minHeight: Int = 800
+    val minHeight: Int = 800,
+    /** Each entry is a group: at least one comma separated term must appear. All groups must match. */
+    val mustMatch: List<String> = emptyList()
 ) {
     /**
      * Search results are noisier than curated categories, so feeds without a Commons

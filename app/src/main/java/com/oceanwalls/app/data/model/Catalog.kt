@@ -18,13 +18,28 @@ data class WallpaperCategory(
     val group: CategoryGroup,
     val search: String,
     val keywords: List<String>,
-    val category: String? = null
+    val category: String? = null,
+    val mustMatch: List<String> = emptyList()
 ) {
     val spec: FeedSpec
-        get() = FeedSpec(id = "cat:$id", label = label, search = search, keywords = keywords, category = category)
+        get() = FeedSpec(
+            id = "cat:$id",
+            label = label,
+            search = search,
+            keywords = keywords,
+            category = category,
+            mustMatch = mustMatch
+        )
 }
 
 object Catalog {
+
+    /** Any real marine subject word - used as an AND group for the two "species status" collections. */
+    private val MARINE_SUBJECT = listOf(
+        "marine,sea,ocean,whale,shark,turtle,seal,coral,dolphin,stingray,manta ray,fish,crustacean," +
+            "mollusc,octopus,jellyfish,seahorse,penguin,orca,dugong,manatee,seagrass"
+    )
+
 
     val marineAnimals = listOf(
         WallpaperCategory("blue-whales", "Blue Whales", CategoryGroup.MARINE_ANIMALS, "blue whale", listOf("whale", "balaenoptera"), "Balaenoptera musculus"),
@@ -44,7 +59,7 @@ object Catalog {
         WallpaperCategory("clownfish", "Clownfish", CategoryGroup.MARINE_ANIMALS, "clownfish anemonefish", listOf("clownfish", "amphiprion", "anemonefish"), "Amphiprioninae"),
         WallpaperCategory("tropical-fish", "Tropical Fish", CategoryGroup.MARINE_ANIMALS, "tropical reef fish", listOf("fish", "pomacentridae", "damselfish", "reef"), "Pomacentridae"),
         WallpaperCategory("penguins", "Penguins", CategoryGroup.MARINE_ANIMALS, "penguin swimming", listOf("penguin", "sphenisc"), "Spheniscidae"),
-        WallpaperCategory("seals", "Seals", CategoryGroup.MARINE_ANIMALS, "seal swimming underwater", listOf("seal", "phoca", "halichoerus"), "Phocidae"),
+        WallpaperCategory("seals", "Seals", CategoryGroup.MARINE_ANIMALS, "seal swimming underwater", listOf("seal", "phoca", "halichoerus"), "Phoca vitulina"),
         WallpaperCategory("sea-lions", "Sea Lions", CategoryGroup.MARINE_ANIMALS, "sea lion underwater", listOf("sea lion", "otari", "zalophus"), "Otariidae"),
         WallpaperCategory("crabs", "Crabs", CategoryGroup.MARINE_ANIMALS, "crab", listOf("crab", "brachyura"), "Brachyura"),
         WallpaperCategory("lobsters", "Lobsters", CategoryGroup.MARINE_ANIMALS, "lobster", listOf("lobster", "homarus", "nephrops"), "Nephropidae"),
@@ -55,7 +70,7 @@ object Catalog {
         WallpaperCategory("deep-sea", "Deep Sea", CategoryGroup.OCEAN_ENVIRONMENTS, "deep sea", listOf("deep", "abyss", "benthic"), "Deep sea"),
         WallpaperCategory("underwater-world", "Underwater World", CategoryGroup.OCEAN_ENVIRONMENTS, "underwater reef", listOf("underwater", "reef", "diver"), "Underwater"),
         WallpaperCategory("coral-reefs", "Coral Reefs", CategoryGroup.OCEAN_ENVIRONMENTS, "coral reef", listOf("coral", "reef"), "Coral reefs"),
-        WallpaperCategory("ocean-caves", "Ocean Caves", CategoryGroup.OCEAN_ENVIRONMENTS, "underwater cave diving", listOf("cave", "cavern", "grotto")),
+        WallpaperCategory("ocean-caves", "Ocean Caves", CategoryGroup.OCEAN_ENVIRONMENTS, "sea cave interior", listOf("cave", "cavern", "grotto")),
         WallpaperCategory("blue-ocean", "Blue Ocean", CategoryGroup.OCEAN_ENVIRONMENTS, "blue ocean sea water", listOf("ocean", "sea", "water"), "Ocean"),
         WallpaperCategory("tropical-sea", "Tropical Sea", CategoryGroup.OCEAN_ENVIRONMENTS, "tropical sea", listOf("turquoise", "lagoon", "sea", "water"), "Turquoise water"),
         WallpaperCategory("open-ocean", "Open Ocean", CategoryGroup.OCEAN_ENVIRONMENTS, "open ocean horizon", listOf("ocean", "sea", "horizon"), "Ocean"),
@@ -68,7 +83,7 @@ object Catalog {
         WallpaperCategory("beaches", "Beautiful Beaches", CategoryGroup.OCEAN_LANDSCAPES, "tropical beach", listOf("beach", "sand", "coast"), "Beaches"),
         WallpaperCategory("ocean-waves", "Ocean Waves", CategoryGroup.OCEAN_LANDSCAPES, "ocean waves", listOf("wave", "surf", "sea"), "Water waves"),
         WallpaperCategory("sea-cliffs", "Sea Cliffs", CategoryGroup.OCEAN_LANDSCAPES, "sea cliff", listOf("cliff", "coast"), "Sea cliffs"),
-        WallpaperCategory("rocky-coastlines", "Rocky Coastlines", CategoryGroup.OCEAN_LANDSCAPES, "rocky coastline", listOf("rock", "coast", "shore")),
+        WallpaperCategory("rocky-coastlines", "Rocky Coastlines", CategoryGroup.OCEAN_LANDSCAPES, "rocky shore ocean", listOf("rock", "shore", "coast")),
         WallpaperCategory("tropical-islands", "Tropical Islands", CategoryGroup.OCEAN_LANDSCAPES, "tropical island", listOf("atoll", "island", "lagoon"), "Atolls"),
         WallpaperCategory("sunset-over-ocean", "Sunset Over Ocean", CategoryGroup.OCEAN_LANDSCAPES, "sunset over ocean", listOf("sunset")),
         WallpaperCategory("sunrise-over-sea", "Sunrise Over Sea", CategoryGroup.OCEAN_LANDSCAPES, "sunrise over sea", listOf("sunrise", "dawn")),
@@ -86,8 +101,8 @@ object Catalog {
         WallpaperCategory("colorful-underwater", "Colorful Underwater Life", CategoryGroup.SPECIAL_COLLECTIONS, "colorful coral reef fish", listOf("coral", "fish", "color"), "Coral reefs"),
         WallpaperCategory("peaceful-ocean", "Peaceful Ocean", CategoryGroup.SPECIAL_COLLECTIONS, "calm ocean horizon", listOf("calm", "ocean", "horizon", "sea")),
         WallpaperCategory("dark-ocean", "Dark Ocean", CategoryGroup.SPECIAL_COLLECTIONS, "dark ocean night", listOf("dark", "night", "ocean")),
-        WallpaperCategory("rare-marine-species", "Rare Marine Species", CategoryGroup.SPECIAL_COLLECTIONS, "rare marine species", listOf("rare", "marine")),
-        WallpaperCategory("endangered-marine", "Endangered Marine Animals", CategoryGroup.SPECIAL_COLLECTIONS, "endangered marine species", listOf("endangered"))
+        WallpaperCategory("rare-marine-species", "Rare Marine Species", CategoryGroup.SPECIAL_COLLECTIONS, "rare sea creature", listOf("vampyro", "squid", "rare", "endemic"), "Vampyroteuthis infernalis"),
+        WallpaperCategory("endangered-marine", "Endangered Marine Animals", CategoryGroup.SPECIAL_COLLECTIONS, "endangered marine species", listOf("endangered"), mustMatch = MARINE_SUBJECT)
     )
 
     val all: List<WallpaperCategory> = marineAnimals + oceanEnvironments + oceanLandscapes + specialCollections
