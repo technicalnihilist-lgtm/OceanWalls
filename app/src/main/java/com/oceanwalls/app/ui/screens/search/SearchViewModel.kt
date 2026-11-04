@@ -56,7 +56,7 @@ class SearchViewModel(
             FeedSpec(
                 id = "search:${trimmed.lowercase()}",
                 label = trimmed,
-                search = "$trimmed ocean sea underwater marine",
+                search = trimmed,
                 keywords = emptyList(),
                 minWidth = 1000,
                 minHeight = 700

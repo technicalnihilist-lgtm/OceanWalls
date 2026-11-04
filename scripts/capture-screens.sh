@@ -71,7 +71,7 @@ adb shell input keyevent KEYCODE_BACK
 sleep 3
 
 # a category screen: trending marine animals pill
-tap $((W*22/100)) $((H*62/100))
+tap $((W*22/100)) $((H*755/1000))
 sleep 10
 shot 08-category
 echo "done"
