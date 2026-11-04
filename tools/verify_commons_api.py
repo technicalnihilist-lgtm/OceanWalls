@@ -32,7 +32,9 @@ JUNK_TITLE = re.compile(r"(map|diagram|chart|graph|logo|sign|poster|stamp|illust
                         r"\b(statue|sculpture|monument|fossil|specimen|holotype|museum|usnm|instructions|notice|"
                         r"warning|billboard|placard|chumming|chuming|market|sale|seafood|restaurant|cooking|dish|"
                         r"hurricane|typhoon|cyclone|satellite|military|vehicle|assault|amphibious|zoology|"
-                        r"natural history|limestone|devonian|geologic|outcrop|hubble|galaxy|nebula|telescope|nasa|\b(stilt|tern|gull|egret|heron|"
+                        r"natural history|limestone|devonian|geologic|outcrop|hubble|galaxy|nebula|telescope|nasa|webb|jwst|"
+                        r"spitzer|chandra|macs j|deep field|astronom|light-year|quasar|supernova|exoplanet|"
+                        r"interstellar|cosmic|universe|space station|\b(stilt|tern|gull|egret|heron|"
                         r"eagle|hawk|owl|sparrow|crane|flamingo|avocet|plover|sandpiper|pelican)\b))", re.I)
 HUMAN_TERM = re.compile(
     r"\b(people|person|persons|human|humans|man|men|woman|women|girl|girls|boy|boys|child|children|"

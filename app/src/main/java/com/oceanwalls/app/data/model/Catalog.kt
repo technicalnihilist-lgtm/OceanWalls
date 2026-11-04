@@ -154,6 +154,12 @@ object Catalog {
         category = "Coral reefs"
     )
 
+    /** Strict ocean subject group used where a feed must not drift off-topic. */
+    val OCEAN_SUBJECT: List<String> = listOf(
+        "ocean,sea,underwater,reef,coral,beach,coast,wave,marine,dive,diver,whale,shark,dolphin," +
+            "turtle,fish,island,lagoon,kelp,seagrass,jellyfish,octopus,seal,penguin,surf,shore,"
+    )
+
     /** Rotating daily queries - the image genuinely changes every day. */
     val dailyQueries = listOf(
         "underwater ocean sunbeam",

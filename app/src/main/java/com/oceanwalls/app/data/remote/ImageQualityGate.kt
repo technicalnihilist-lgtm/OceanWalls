@@ -16,7 +16,9 @@ object ImageQualityGate {
             "\\b(statue|sculpture|monument|fossil|specimen|holotype|museum|usnm|instructions|notice|" +
             "warning|billboard|placard|chumming|chuming|market|sale|seafood|restaurant|cooking|dish|" +
             "hurricane|typhoon|cyclone|satellite|military|vehicle|assault|amphibious|zoology|" +
-            "natural history|limestone|devonian|geologic|outcrop|hubble|galaxy|nebula|telescope|nasa|" +
+            "natural history|limestone|devonian|geologic|outcrop|hubble|galaxy|nebula|telescope|nasa|webb|" +
+            "jwst|spitzer|chandra|macs j|deep field|astronom|light-year|quasar|supernova|exoplanet|" +
+            "interstellar|cosmic|universe|space station|" +
             "\\b(stilt|tern|gull|egret|heron|" +
             "eagle|hawk|owl|sparrow|crane|flamingo|avocet|plover|sandpiper|pelican)\\b))",
         RegexOption.IGNORE_CASE

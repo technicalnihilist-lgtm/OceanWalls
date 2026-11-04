@@ -195,7 +195,13 @@ class WallpaperRepository(
             val dayOfYear = Calendar.getInstance().get(Calendar.DAY_OF_YEAR)
             val query = Catalog.dailyQueries[dayOfYear % Catalog.dailyQueries.size]
             val page = fetchFeed(
-                FeedSpec("feed:daily:$today", "Daily ocean wallpaper", query, OCEAN_HINTS),
+                FeedSpec(
+                    id = "feed:daily:$today",
+                    label = "Daily ocean wallpaper",
+                    search = query,
+                    keywords = OCEAN_HINTS,
+                    mustMatch = Catalog.OCEAN_SUBJECT
+                ),
                 null
             )
             if (page.items.isEmpty()) throw CommonsException("No ocean wallpaper available today")
