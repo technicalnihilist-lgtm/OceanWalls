@@ -102,3 +102,17 @@ app/src/main/java/com/oceanwalls/app/
 App source: MIT (`LICENSE`). Bundled typeface Manrope: SIL Open Font License 1.1
 (`app/src/main/assets/OFL-Manrope.txt`). Photographs: **their own licences**, shown per image —
 OceanWalls never claims ownership of third-party photography.
+
+---
+
+## ☕ Donate / Buy me a coffee
+
+**Coming soon** — our donation options are on the way.
+
+| Platform | Status |
+| --- | --- |
+| Paytm | Coming soon |
+| PayPal | Coming soon |
+| GPay (Google Pay) | Coming soon |
+
+If you like our work, you can support us with a donation. We are bringing this very soon — **coming soon**.
