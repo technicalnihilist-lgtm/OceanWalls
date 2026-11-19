@@ -1,10 +1,10 @@
 <div align="center">
 
+<img src="assets/icon.png" width="96" height="96" alt="OceanWalls - premium live ocean wallpaper app for Android (Kotlin, Jetpack Compose, Wikimedia… icon">
+
+<img src="assets/banner.svg" alt="OceanWalls - premium live ocean wallpaper app for Android (Kotlin, Jetpack Compose, Wikimedia…">
+
 <a href="https://github.com/technicalnihilist-lgtm/OceanWalls/stargazers"><img src="https://img.shields.io/badge/stars-1-5A31F4?style=for-the-badge&logo=github&logoColor=white" alt="stars: 1"></a>&nbsp;<a href="https://github.com/technicalnihilist-lgtm/OceanWalls/network/members"><img src="https://img.shields.io/badge/forks-0-3FB950?style=for-the-badge" alt="forks: 0"></a>
-
-<h3>OceanWalls - premium live ocean wallpaper app for Android (Kotlin, Jetpack Compose, Wikimedia…</h3>
-
-<img src="https://img.shields.io/badge/Kotlin-5865F2?style=flat-square" alt="Kotlin"> <img src="https://img.shields.io/badge/Zero%20trackers-3B3F4A?style=flat-square" alt="Zero trackers"> <img src="https://img.shields.io/badge/Open%20source-3FB950?style=flat-square" alt="Open source">
 
 <a href="https://github.com/technicalnihilist-lgtm/OceanWalls/releases/latest"><img src="https://img.shields.io/badge/DOWNLOAD-APK-6D5AE6?style=for-the-badge&logo=android&logoColor=white" alt="Download APK"></a>
 
@@ -16,13 +16,7 @@
 
 <a href="https://github.com/technicalnihilist-lgtm/OceanWalls/releases/latest"><img src="https://img.shields.io/badge/VERSION-v1.0.1-6D5AE6?style=for-the-badge" alt="VERSION: v1.0.1"></a> <img src="https://img.shields.io/badge/DOWNLOADS-4-3FB950?style=for-the-badge" alt="DOWNLOADS: 4"> <a href="https://github.com/technicalnihilist-lgtm/OceanWalls/releases"><img src="https://img.shields.io/badge/RELEASES-GITHUB-EC4899?style=for-the-badge&logo=github&logoColor=white" alt="RELEASES: GITHUB"></a>
 
-<h4>Get it from</h4>
-
-<a href="https://github.com/technicalnihilist-lgtm/OceanWalls/releases"><img src="https://img.shields.io/badge/GitHub-Releases-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub Releases"></a> <a href="https://github.com/technicalnihilist-lgtm/OceanWalls/archive/refs/heads/main.zip"><img src="https://img.shields.io/badge/Source-ZIP-0EA5E9?style=for-the-badge&logo=github&logoColor=white" alt="Source ZIP"></a>
-
 </div>
-
----
 
 ---
 
